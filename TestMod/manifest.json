@@ -1,0 +1,10 @@
+{
+  "Name": "TestMod",
+  "Author": "radialene",
+  "Version": "1.0.0",
+  "Description": "just a test",
+  "UniqueID": "radialene.TestMod",
+  "EntryDll": "TestMod.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}
