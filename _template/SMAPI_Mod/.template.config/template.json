@@ -1,0 +1,64 @@
+﻿{
+   "$schema": "https://json.schemastore.org/template",
+
+    "author": "radialene",
+    "classification": ["Library", "Games", "StardewValley" ],
+
+    "identity": "radialene.StardewMods.SMAPI_template",
+    "name": "SMAPI Mod Template",
+    "description": "Template for new SMPAI Mod in existing solution",
+
+    "shortname": "smapi_mod",
+    "sourceName": "TemplateProject",
+
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "symbols": {
+        "Author": {
+            "type": "parameter",
+            "datatype": "string",
+            "description": "author name",
+            "isRequired": true,
+            "replaces": "PROJECT_AUTHOR"
+        },
+        "Description": {
+            "type": "parameter",
+            "datatype": "string",
+            "description": "project description",
+            "isRequired": false,
+            "defaultValue": "",
+            "replaces": "PROJECT_DESCRIPTION"
+        },
+        "Name": {
+            "type": "parameter",
+            "datatype": "string",
+            "description": "project name",
+            "isRequired": true,
+            "replaces": "PROJECT_NAME"
+        },
+        "Namespace": {
+            "type": "generated",
+            "generator": "join",
+            "parameters": {
+                "symbols": [
+                    {
+                        "type": "ref",
+                        "value": "Author"
+                    },
+                    {
+                        "type": "text",
+                        "value": "Stardew"
+                    },
+                    {
+                        "type": "ref",
+                        "value": "Name"
+                    }
+                ],
+                "separator": "."
+            },
+            "replaces": "PROJECT_SLUG"
+        }
+    }
+}

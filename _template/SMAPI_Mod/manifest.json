@@ -1,0 +1,10 @@
+﻿{
+  "Name": "PROJECT_NAME",
+  "Author": "PROJECT_AUTHOR",
+  "Version": "1.0.0",
+  "Description": "PROJECT_DESCRIPTION",
+  "UniqueID": "PROJECT_SLUG",
+  "EntryDll": "PROJECT_NAME.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}

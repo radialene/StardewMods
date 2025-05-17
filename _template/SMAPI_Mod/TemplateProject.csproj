@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <RootNamespace>PROJECT_SLUG</RootNamespace>
+
+    <Name>PROJECT_NAME</Name>
+    <Author>PROJECT_AUTHOR</Author>
+    <Description>PROJECT_DESCRIPTION</Description>
+
+    <UpdateKeys></UpdateKeys>
+  </PropertyGroup>
+
+</Project>
