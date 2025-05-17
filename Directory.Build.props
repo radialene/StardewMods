@@ -5,11 +5,22 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/radialene/StardewMods</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
 
+    <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-        <ModZipPath Condition="'$(SolutionDir)' != ''">$(SolutionDir)\_releases</ModZipPath>
     </PropertyGroup>
+
+    <PropertyGroup>
+        <ModZipPath>$(SolutionDir)\_release</ModZipPath>
+        <EnableModZip Condition="$(Configuration) != 'Release'">False</EnableModZip>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+        <PackageReference Include="Leclair.Stardew.ModManifestBuilder" Version="2.4.1" />
+    </ItemGroup>
 </Project>
