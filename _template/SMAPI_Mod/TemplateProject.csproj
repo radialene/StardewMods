@@ -7,6 +7,7 @@
     <Name>PROJECT_NAME</Name>
     <Author>PROJECT_AUTHOR</Author>
     <Description>PROJECT_DESCRIPTION</Description>
+    <UniqueId>PROJECT_SLUG</UniqueId>
 
     <UpdateKeys></UpdateKeys>
   </PropertyGroup>
